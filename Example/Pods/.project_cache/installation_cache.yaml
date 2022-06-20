@@ -1,0 +1,67 @@
+BUILD_CONFIGURATIONS:
+  Debug: :debug
+  Release: :release
+CACHE_KEYS:
+  Pods-RTRootNavigationController_Swift_Example:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 06c60e6c7ddb9ce7107fd7eada8b83ca
+      Release: 06c60e6c7ddb9ce7107fd7eada8b83ca
+  Pods-RTRootNavigationController_Swift_Tests:
+    BUILD_SETTINGS_CHECKSUM:
+      Debug: 5091a0db2d593ea68af593ea312d32c5
+      Release: 5091a0db2d593ea68af593ea312d32c5
+  RTRootNavigationController_Swift:
+    BUILD_SETTINGS_CHECKSUM:
+      RTRootNavigationController_Swift:
+        :debug: 5c3063c85631915a398b75d082a86b12
+        :release: 5c3063c85631915a398b75d082a86b12
+    CHECKSUM: a725ba788e3068d76372ebed4e01d7cb2e54e48c
+    FILES:
+      - "../../LICENSE"
+      - "../../README.md"
+      - "../../RTRootNavigationController_Swift/Classes/Associated.swift"
+      - "../../RTRootNavigationController_Swift/Classes/ContainerController.swift"
+      - "../../RTRootNavigationController_Swift/Classes/ContainerNavigationController.swift"
+      - "../../RTRootNavigationController_Swift/Classes/FullscreenPopGestureRecognizerDelegate.swift"
+      - "../../RTRootNavigationController_Swift/Classes/RootNavigationController.swift"
+      - "../../RTRootNavigationController_Swift/Classes/UIViewController+RootNavigationController.swift"
+      - "../../RTRootNavigationController_Swift/Classes/Untils.swift"
+      - "../../RTRootNavigationController_Swift/Classes/ViewControllerAnimatedTransitioning.swift"
+    PROJECT_NAME: RTRootNavigationController_Swift
+    SPECS:
+      - RTRootNavigationController_Swift (0.1.0)
+  SwiftFormat:
+    BUILD_SETTINGS_CHECKSUM:
+      SwiftFormat:
+        :debug: a1d34ba55f4798070b85f029207867b0
+        :release: a1d34ba55f4798070b85f029207867b0
+    CHECKSUM: 8acc16efcecb563206cbe90b4cb047cfdf9aafdb
+    PROJECT_NAME: SwiftFormat
+    SPECS:
+      - SwiftFormat/CLI (0.49.4)
+  SwiftLint:
+    BUILD_SETTINGS_CHECKSUM:
+      SwiftLint:
+        :debug: 13b282e179d13e840c16a5405fcaf52d
+        :release: 13b282e179d13e840c16a5405fcaf52d
+    CHECKSUM: 5553187048b900c91aa03552807681bb6b027846
+    PROJECT_NAME: SwiftLint
+    SPECS:
+      - SwiftLint (0.35.0)
+INSTALLATION_OPTIONS:
+  clean: true
+  deduplicate_targets: true
+  deterministic_uuids: true
+  disable_input_output_paths: true
+  generate_multiple_pod_projects: true
+  incremental_installation: true
+  integrate_targets: true
+  lock_pod_sources: true
+  preserve_pod_file_structure: false
+  share_schemes_for_development_pods: false
+  skip_pods_project_generation: false
+  warn_for_multiple_pod_sources: true
+  warn_for_unused_master_specs_repo: true
+OBJECT_VERSION: 46
+PLUGINS:
+  {}

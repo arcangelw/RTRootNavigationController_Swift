@@ -1,0 +1,442 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		0E7A85000A6601299B6917BBB6222F2E /* ViewControllerAnimatedTransitioning.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0903746F37513854C302CD5407C9B1F9 /* ViewControllerAnimatedTransitioning.swift */; };
+		31E55AE87CE6E283D88B8083E3ECBC7A /* FullscreenPopGestureRecognizerDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 56B1ABDE6F0B6C7B686FFFCA157AE5A5 /* FullscreenPopGestureRecognizerDelegate.swift */; };
+		66503F1003185006E5417D87085CF96C /* ContainerController.swift in Sources */ = {isa = PBXBuildFile; fileRef = E967127437E594ED87C85B20248554CD /* ContainerController.swift */; };
+		6A94F36A20DFE243D1A744EC16518BE0 /* RTRootNavigationController_Swift-dummy.m in Sources */ = {isa = PBXBuildFile; fileRef = 830C8BD54452C9176CB8C67B132C6357 /* RTRootNavigationController_Swift-dummy.m */; };
+		780A3A733146D5EECFAE294A304DAFE2 /* ContainerNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = EE868821D340FE062E60E85BCE1F966E /* ContainerNavigationController.swift */; };
+		8AAF429AF72CB3BB861E2F1D7AF46B40 /* Untils.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6A817A8B9619E447DEC519EA34E48D2 /* Untils.swift */; };
+		92575CA443C52B34B1A0B4B4374BEC5C /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 77490DC0F14233EC0860348B61B6FE5B /* Foundation.framework */; };
+		AEF2DD3C744589A947D72E52DBFCC6C9 /* UIViewController+RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = B358D67286B8866B739A9CCF144CA11E /* UIViewController+RootNavigationController.swift */; };
+		D8DCF0F9C372EA0FF06B8B4969F62CB3 /* Associated.swift in Sources */ = {isa = PBXBuildFile; fileRef = 128D235AC0FC354721A76032E4CF26CA /* Associated.swift */; };
+		DCA89B18B96ECEEFF964CA883DEF3DCC /* RTRootNavigationController_Swift-umbrella.h in Headers */ = {isa = PBXBuildFile; fileRef = 9436AF2215EB240290E41468D020EA1D /* RTRootNavigationController_Swift-umbrella.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		F704DF07AD909DDB8076E00EEA2F8431 /* RootNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 5D9B932D630D358B3B31D87593F625FF /* RootNavigationController.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		0903746F37513854C302CD5407C9B1F9 /* ViewControllerAnimatedTransitioning.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ViewControllerAnimatedTransitioning.swift; path = RTRootNavigationController_Swift/Classes/ViewControllerAnimatedTransitioning.swift; sourceTree = "<group>"; };
+		128D235AC0FC354721A76032E4CF26CA /* Associated.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Associated.swift; path = RTRootNavigationController_Swift/Classes/Associated.swift; sourceTree = "<group>"; };
+		56B1ABDE6F0B6C7B686FFFCA157AE5A5 /* FullscreenPopGestureRecognizerDelegate.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = FullscreenPopGestureRecognizerDelegate.swift; path = RTRootNavigationController_Swift/Classes/FullscreenPopGestureRecognizerDelegate.swift; sourceTree = "<group>"; };
+		5D9B932D630D358B3B31D87593F625FF /* RootNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = RootNavigationController.swift; path = RTRootNavigationController_Swift/Classes/RootNavigationController.swift; sourceTree = "<group>"; };
+		6BF0A01D66EDB4A2A7B875C52B28E03A /* RTRootNavigationController_Swift.modulemap */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.module; path = RTRootNavigationController_Swift.modulemap; sourceTree = "<group>"; };
+		77490DC0F14233EC0860348B61B6FE5B /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = Platforms/iPhoneOS.platform/Developer/SDKs/iPhoneOS14.0.sdk/System/Library/Frameworks/Foundation.framework; sourceTree = DEVELOPER_DIR; };
+		830C8BD54452C9176CB8C67B132C6357 /* RTRootNavigationController_Swift-dummy.m */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.objc; path = "RTRootNavigationController_Swift-dummy.m"; sourceTree = "<group>"; };
+		871450FDEF0EDCD81E252D72C73D52C4 /* RTRootNavigationController_Swift.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RTRootNavigationController_Swift.release.xcconfig; sourceTree = "<group>"; };
+		911C799B5AB50B5365D7C35619FC2F39 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; path = LICENSE; sourceTree = "<group>"; };
+		942E876A053C26BC8DD646BB5A2886D6 /* RTRootNavigationController_Swift-Info.plist */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.plist.xml; path = "RTRootNavigationController_Swift-Info.plist"; sourceTree = "<group>"; };
+		9436AF2215EB240290E41468D020EA1D /* RTRootNavigationController_Swift-umbrella.h */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTRootNavigationController_Swift-umbrella.h"; sourceTree = "<group>"; };
+		A847B74DA2BE439B72FB1A02C8A77029 /* RTRootNavigationController_Swift-prefix.pch */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.c.h; path = "RTRootNavigationController_Swift-prefix.pch"; sourceTree = "<group>"; };
+		B358D67286B8866B739A9CCF144CA11E /* UIViewController+RootNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = "UIViewController+RootNavigationController.swift"; path = "RTRootNavigationController_Swift/Classes/UIViewController+RootNavigationController.swift"; sourceTree = "<group>"; };
+		BCD6E680AD2D6E87C4FEDE570F9E4989 /* RTRootNavigationController_Swift.podspec */ = {isa = PBXFileReference; explicitFileType = text.script.ruby; includeInIndex = 1; indentWidth = 2; lastKnownFileType = text; path = RTRootNavigationController_Swift.podspec; sourceTree = "<group>"; tabWidth = 2; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
+		C7112C51C1099A1CC62C4F7B528CB5D7 /* RTRootNavigationController_Swift */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; name = RTRootNavigationController_Swift; path = RTRootNavigationController_Swift.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		D01DD78D45DC1FC5F0BE263ECB877B34 /* RTRootNavigationController_Swift.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; path = RTRootNavigationController_Swift.debug.xcconfig; sourceTree = "<group>"; };
+		DAF862C00871315872C1E673E6DDA18C /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; path = README.md; sourceTree = "<group>"; };
+		E6A817A8B9619E447DEC519EA34E48D2 /* Untils.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = Untils.swift; path = RTRootNavigationController_Swift/Classes/Untils.swift; sourceTree = "<group>"; };
+		E967127437E594ED87C85B20248554CD /* ContainerController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerController.swift; path = RTRootNavigationController_Swift/Classes/ContainerController.swift; sourceTree = "<group>"; };
+		EE868821D340FE062E60E85BCE1F966E /* ContainerNavigationController.swift */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = sourcecode.swift; name = ContainerNavigationController.swift; path = RTRootNavigationController_Swift/Classes/ContainerNavigationController.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		2CA8EA343878FCF84DB46AC2E727123D /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				92575CA443C52B34B1A0B4B4374BEC5C /* Foundation.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		1139039685AAFD6695E7D545835C567D /* Pod */ = {
+			isa = PBXGroup;
+			children = (
+				911C799B5AB50B5365D7C35619FC2F39 /* LICENSE */,
+				DAF862C00871315872C1E673E6DDA18C /* README.md */,
+				BCD6E680AD2D6E87C4FEDE570F9E4989 /* RTRootNavigationController_Swift.podspec */,
+			);
+			name = Pod;
+			sourceTree = "<group>";
+		};
+		2FE2F82CA728B1FD6CEB5D8A10780A8A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				DF627EF32E3A35D7F74EFF022258827E /* iOS */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		4EC2E946B9362DD50F547CAE428A9C10 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				C7112C51C1099A1CC62C4F7B528CB5D7 /* RTRootNavigationController_Swift */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8102D010B72F2A566D423E5827E4EB48 /* Support Files */ = {
+			isa = PBXGroup;
+			children = (
+				6BF0A01D66EDB4A2A7B875C52B28E03A /* RTRootNavigationController_Swift.modulemap */,
+				830C8BD54452C9176CB8C67B132C6357 /* RTRootNavigationController_Swift-dummy.m */,
+				942E876A053C26BC8DD646BB5A2886D6 /* RTRootNavigationController_Swift-Info.plist */,
+				A847B74DA2BE439B72FB1A02C8A77029 /* RTRootNavigationController_Swift-prefix.pch */,
+				9436AF2215EB240290E41468D020EA1D /* RTRootNavigationController_Swift-umbrella.h */,
+				D01DD78D45DC1FC5F0BE263ECB877B34 /* RTRootNavigationController_Swift.debug.xcconfig */,
+				871450FDEF0EDCD81E252D72C73D52C4 /* RTRootNavigationController_Swift.release.xcconfig */,
+			);
+			name = "Support Files";
+			path = "Example/Pods/Target Support Files/RTRootNavigationController_Swift";
+			sourceTree = "<group>";
+		};
+		A084E176B01B1053D44D912B83DDA766 = {
+			isa = PBXGroup;
+			children = (
+				2FE2F82CA728B1FD6CEB5D8A10780A8A /* Frameworks */,
+				4EC2E946B9362DD50F547CAE428A9C10 /* Products */,
+				CEDC3954D63FD5C967C22CF028285943 /* RTRootNavigationController_Swift */,
+			);
+			sourceTree = "<group>";
+		};
+		CEDC3954D63FD5C967C22CF028285943 /* RTRootNavigationController_Swift */ = {
+			isa = PBXGroup;
+			children = (
+				128D235AC0FC354721A76032E4CF26CA /* Associated.swift */,
+				E967127437E594ED87C85B20248554CD /* ContainerController.swift */,
+				EE868821D340FE062E60E85BCE1F966E /* ContainerNavigationController.swift */,
+				56B1ABDE6F0B6C7B686FFFCA157AE5A5 /* FullscreenPopGestureRecognizerDelegate.swift */,
+				5D9B932D630D358B3B31D87593F625FF /* RootNavigationController.swift */,
+				B358D67286B8866B739A9CCF144CA11E /* UIViewController+RootNavigationController.swift */,
+				E6A817A8B9619E447DEC519EA34E48D2 /* Untils.swift */,
+				0903746F37513854C302CD5407C9B1F9 /* ViewControllerAnimatedTransitioning.swift */,
+				1139039685AAFD6695E7D545835C567D /* Pod */,
+				8102D010B72F2A566D423E5827E4EB48 /* Support Files */,
+			);
+			name = RTRootNavigationController_Swift;
+			path = ../..;
+			sourceTree = "<group>";
+		};
+		DF627EF32E3A35D7F74EFF022258827E /* iOS */ = {
+			isa = PBXGroup;
+			children = (
+				77490DC0F14233EC0860348B61B6FE5B /* Foundation.framework */,
+			);
+			name = iOS;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXHeadersBuildPhase section */
+		C5AF58B80ADC9047EED60E1A7ED6450C /* Headers */ = {
+			isa = PBXHeadersBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				DCA89B18B96ECEEFF964CA883DEF3DCC /* RTRootNavigationController_Swift-umbrella.h in Headers */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXHeadersBuildPhase section */
+
+/* Begin PBXNativeTarget section */
+		F9D8740F5E19ED723BDC4241705E94B0 /* RTRootNavigationController_Swift */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 2F0890D4F92FA50080D05FBF4A29C474 /* Build configuration list for PBXNativeTarget "RTRootNavigationController_Swift" */;
+			buildPhases = (
+				C5AF58B80ADC9047EED60E1A7ED6450C /* Headers */,
+				BE5231D0A4B3C36020646291B320E93C /* Sources */,
+				2CA8EA343878FCF84DB46AC2E727123D /* Frameworks */,
+				DBF1565084C3FAEA2FE225CB9DE69C3F /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = RTRootNavigationController_Swift;
+			productName = RTRootNavigationController_Swift;
+			productReference = C7112C51C1099A1CC62C4F7B528CB5D7 /* RTRootNavigationController_Swift */;
+			productType = "com.apple.product-type.framework";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F7FAF91C974A21459FC3240C0999169D /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+			};
+			buildConfigurationList = D590059459BC8951C549D1DB0CA46C26 /* Build configuration list for PBXProject "RTRootNavigationController_Swift" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				Base,
+				en,
+			);
+			mainGroup = A084E176B01B1053D44D912B83DDA766;
+			productRefGroup = 4EC2E946B9362DD50F547CAE428A9C10 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F9D8740F5E19ED723BDC4241705E94B0 /* RTRootNavigationController_Swift */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		DBF1565084C3FAEA2FE225CB9DE69C3F /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		BE5231D0A4B3C36020646291B320E93C /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D8DCF0F9C372EA0FF06B8B4969F62CB3 /* Associated.swift in Sources */,
+				66503F1003185006E5417D87085CF96C /* ContainerController.swift in Sources */,
+				780A3A733146D5EECFAE294A304DAFE2 /* ContainerNavigationController.swift in Sources */,
+				31E55AE87CE6E283D88B8083E3ECBC7A /* FullscreenPopGestureRecognizerDelegate.swift in Sources */,
+				F704DF07AD909DDB8076E00EEA2F8431 /* RootNavigationController.swift in Sources */,
+				6A94F36A20DFE243D1A744EC16518BE0 /* RTRootNavigationController_Swift-dummy.m in Sources */,
+				AEF2DD3C744589A947D72E52DBFCC6C9 /* UIViewController+RootNavigationController.swift in Sources */,
+				8AAF429AF72CB3BB861E2F1D7AF46B40 /* Untils.swift in Sources */,
+				0E7A85000A6601299B6917BBB6222F2E /* ViewControllerAnimatedTransitioning.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		1EF1ABF1EA5224DC316C1F14C20554E8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 871450FDEF0EDCD81E252D72C73D52C4 /* RTRootNavigationController_Swift.release.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RTRootNavigationController_Swift/RTRootNavigationController_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RTRootNavigationController_Swift/RTRootNavigationController_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/RTRootNavigationController_Swift/RTRootNavigationController_Swift.modulemap";
+				PRODUCT_MODULE_NAME = RTRootNavigationController_Swift;
+				PRODUCT_NAME = RTRootNavigationController_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Release;
+		};
+		383304F3999B0CEE6DEB94C97A48EFA8 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_RELEASE=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Release;
+		};
+		DEF05587A615780673D2D3E86C05FD7D /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"POD_CONFIGURATION_DEBUG=1",
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				STRIP_INSTALLED_PRODUCT = NO;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+				SWIFT_VERSION = 5.0;
+				SYMROOT = "${SRCROOT}/../build";
+			};
+			name = Debug;
+		};
+		F6646EE3E39247E6D2B622C8C34F31D7 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = D01DD78D45DC1FC5F0BE263ECB877B34 /* RTRootNavigationController_Swift.debug.xcconfig */;
+			buildSettings = {
+				ARCHS = "$(ARCHS_STANDARD_64_BIT)";
+				CLANG_ENABLE_OBJC_WEAK = NO;
+				"CODE_SIGN_IDENTITY[sdk=appletvos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "";
+				"CODE_SIGN_IDENTITY[sdk=watchos*]" = "";
+				CURRENT_PROJECT_VERSION = 1;
+				DEFINES_MODULE = YES;
+				DYLIB_COMPATIBILITY_VERSION = 1;
+				DYLIB_CURRENT_VERSION = 1;
+				DYLIB_INSTALL_NAME_BASE = "@rpath";
+				GCC_PREFIX_HEADER = "Target Support Files/RTRootNavigationController_Swift/RTRootNavigationController_Swift-prefix.pch";
+				INFOPLIST_FILE = "Target Support Files/RTRootNavigationController_Swift/RTRootNavigationController_Swift-Info.plist";
+				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = staticlib;
+				MODULEMAP_FILE = "Target Support Files/RTRootNavigationController_Swift/RTRootNavigationController_Swift.modulemap";
+				PRODUCT_MODULE_NAME = RTRootNavigationController_Swift;
+				PRODUCT_NAME = RTRootNavigationController_Swift;
+				SDKROOT = iphoneos;
+				SKIP_INSTALL = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "$(inherited) ";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VERSIONING_SYSTEM = "apple-generic";
+				VERSION_INFO_PREFIX = "";
+			};
+			name = Debug;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		2F0890D4F92FA50080D05FBF4A29C474 /* Build configuration list for PBXNativeTarget "RTRootNavigationController_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F6646EE3E39247E6D2B622C8C34F31D7 /* Debug */,
+				1EF1ABF1EA5224DC316C1F14C20554E8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D590059459BC8951C549D1DB0CA46C26 /* Build configuration list for PBXProject "RTRootNavigationController_Swift" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				DEF05587A615780673D2D3E86C05FD7D /* Debug */,
+				383304F3999B0CEE6DEB94C97A48EFA8 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F7FAF91C974A21459FC3240C0999169D /* Project object */;
+}

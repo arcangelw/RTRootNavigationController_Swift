@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		336C7D4C2861B7E0003BA0FA /* ObjCViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 336C7D4B2861B7E0003BA0FA /* ObjCViewController.m */; };
 		607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD51AFB9204008FA782 /* AppDelegate.swift */; };
 		607FACD81AFB9204008FA782 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 607FACD71AFB9204008FA782 /* ViewController.swift */; };
 		607FACDB1AFB9204008FA782 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 607FACD91AFB9204008FA782 /* Main.storyboard */; };
@@ -31,8 +32,11 @@
 		01C9DF8328E0B16E8786B975 /* Pods-RTRootNavigationController_Swift_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTRootNavigationController_Swift_Tests.debug.xcconfig"; path = "Target Support Files/Pods-RTRootNavigationController_Swift_Tests/Pods-RTRootNavigationController_Swift_Tests.debug.xcconfig"; sourceTree = "<group>"; };
 		24C48964DE6AAE288BC83CEE /* Pods-RTRootNavigationController_Swift_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTRootNavigationController_Swift_Example.release.xcconfig"; path = "Target Support Files/Pods-RTRootNavigationController_Swift_Example/Pods-RTRootNavigationController_Swift_Example.release.xcconfig"; sourceTree = "<group>"; };
 		31A46E76D59EF4EA3D5E5FF1 /* Pods-RTRootNavigationController_Swift_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTRootNavigationController_Swift_Tests.release.xcconfig"; path = "Target Support Files/Pods-RTRootNavigationController_Swift_Tests/Pods-RTRootNavigationController_Swift_Tests.release.xcconfig"; sourceTree = "<group>"; };
+		336C7D492861B7E0003BA0FA /* RTRootNavigationController_Swift_Example-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "RTRootNavigationController_Swift_Example-Bridging-Header.h"; sourceTree = "<group>"; };
+		336C7D4A2861B7E0003BA0FA /* ObjCViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ObjCViewController.h; sourceTree = "<group>"; };
+		336C7D4B2861B7E0003BA0FA /* ObjCViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ObjCViewController.m; sourceTree = "<group>"; };
 		38CC8DCF25CEBD83A282AE13 /* Pods_RTRootNavigationController_Swift_Tests.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTRootNavigationController_Swift_Tests.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		5B25AC616016855E013A842B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		5B25AC616016855E013A842B /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* RTRootNavigationController_Swift_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = RTRootNavigationController_Swift_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -43,9 +47,9 @@
 		607FACE51AFB9204008FA782 /* RTRootNavigationController_Swift_Tests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = RTRootNavigationController_Swift_Tests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACEA1AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACEB1AFB9204008FA782 /* Tests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tests.swift; sourceTree = "<group>"; };
-		65D60D7AB6FC60DD7F9EFF2B /* RTRootNavigationController_Swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = RTRootNavigationController_Swift.podspec; path = ../RTRootNavigationController_Swift.podspec; sourceTree = "<group>"; };
+		65D60D7AB6FC60DD7F9EFF2B /* RTRootNavigationController_Swift.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = RTRootNavigationController_Swift.podspec; path = ../RTRootNavigationController_Swift.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		967FEE08F33ABB1F2C11E6C5 /* Pods_RTRootNavigationController_Swift_Example.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_RTRootNavigationController_Swift_Example.framework; sourceTree = BUILT_PRODUCTS_DIR; };
-		F1400D65F2557D3BE5AB50DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		F1400D65F2557D3BE5AB50DD /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		F50DBE2D50657B11B6CDDAA4 /* Pods-RTRootNavigationController_Swift_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-RTRootNavigationController_Swift_Example.debug.xcconfig"; path = "Target Support Files/Pods-RTRootNavigationController_Swift_Example/Pods-RTRootNavigationController_Swift_Example.debug.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -104,10 +108,13 @@
 			children = (
 				607FACD51AFB9204008FA782 /* AppDelegate.swift */,
 				607FACD71AFB9204008FA782 /* ViewController.swift */,
+				336C7D4A2861B7E0003BA0FA /* ObjCViewController.h */,
+				336C7D4B2861B7E0003BA0FA /* ObjCViewController.m */,
 				607FACD91AFB9204008FA782 /* Main.storyboard */,
 				607FACDC1AFB9204008FA782 /* Images.xcassets */,
 				607FACDE1AFB9204008FA782 /* LaunchScreen.xib */,
 				607FACD31AFB9204008FA782 /* Supporting Files */,
+				336C7D492861B7E0003BA0FA /* RTRootNavigationController_Swift_Example-Bridging-Header.h */,
 			);
 			name = "Example for RTRootNavigationController_Swift";
 			path = RTRootNavigationController_Swift;
@@ -156,7 +163,6 @@
 				01C9DF8328E0B16E8786B975 /* Pods-RTRootNavigationController_Swift_Tests.debug.xcconfig */,
 				31A46E76D59EF4EA3D5E5FF1 /* Pods-RTRootNavigationController_Swift_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -171,7 +177,7 @@
 				607FACCC1AFB9204008FA782 /* Sources */,
 				607FACCD1AFB9204008FA782 /* Frameworks */,
 				607FACCE1AFB9204008FA782 /* Resources */,
-				0B05993374BA0FE1353759BF /* [CP] Embed Pods Frameworks */,
+				336C7CEF286147A7003BA0FA /* ShellScript */,
 			);
 			buildRules = (
 			);
@@ -213,7 +219,7 @@
 				TargetAttributes = {
 					607FACCF1AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
-						LastSwiftMigration = 0900;
+						LastSwiftMigration = 1340;
 					};
 					607FACE41AFB9204008FA782 = {
 						CreatedOnToolsVersion = 6.3.1;
@@ -227,6 +233,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
@@ -262,23 +269,22 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		0B05993374BA0FE1353759BF /* [CP] Embed Pods Frameworks */ = {
+		336C7CEF286147A7003BA0FA /* ShellScript */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 			);
-			inputPaths = (
-				"${PODS_ROOT}/Target Support Files/Pods-RTRootNavigationController_Swift_Example/Pods-RTRootNavigationController_Swift_Example-frameworks.sh",
-				"${BUILT_PRODUCTS_DIR}/RTRootNavigationController_Swift/RTRootNavigationController_Swift.framework",
+			inputFileListPaths = (
 			);
-			name = "[CP] Embed Pods Frameworks";
+			inputPaths = (
+			);
+			outputFileListPaths = (
+			);
 			outputPaths = (
-				"${TARGET_BUILD_DIR}/${FRAMEWORKS_FOLDER_PATH}/RTRootNavigationController_Swift.framework",
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 			shellPath = /bin/sh;
-			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-RTRootNavigationController_Swift_Example/Pods-RTRootNavigationController_Swift_Example-frameworks.sh\"\n";
-			showEnvVarsInLog = 0;
+			shellScript = "# 只在debug环境生效\nif [ $CONFIGURATION == Debug ]; then\n\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT\"\n\"${PODS_ROOT}/SwiftLint/swiftlint\"\n\"${PODS_ROOT}/SwiftFormat/CommandLineTool/swiftformat\" \"$SRCROOT/../RTRootNavigationController_Swift\"\n\"${PODS_ROOT}/SwiftLint/swiftlint\" ../RTRootNavigationController_Swift\necho \"$SRCROOT\"\nfi\n";
 		};
 		6B63130649D4B4BD230181E6 /* [CP] Check Pods Manifest.lock */ = {
 			isa = PBXShellScriptBuildPhase;
@@ -333,6 +339,7 @@
 			files = (
 				607FACD81AFB9204008FA782 /* ViewController.swift in Sources */,
 				607FACD61AFB9204008FA782 /* AppDelegate.swift in Sources */,
+				336C7D4C2861B7E0003BA0FA /* ObjCViewController.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -419,7 +426,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
@@ -465,7 +472,7 @@
 				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
 				GCC_WARN_UNUSED_FUNCTION = YES;
 				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 9.3;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				MTL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
 				SWIFT_OPTIMIZATION_LEVEL = "-Owholemodule";
@@ -478,11 +485,15 @@
 			baseConfigurationReference = F50DBE2D50657B11B6CDDAA4 /* Pods-RTRootNavigationController_Swift_Example.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RTRootNavigationController_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RTRootNavigationController_Swift/RTRootNavigationController_Swift_Example-Bridging-Header.h";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -493,11 +504,14 @@
 			baseConfigurationReference = 24C48964DE6AAE288BC83CEE /* Pods-RTRootNavigationController_Swift_Example.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
 				INFOPLIST_FILE = RTRootNavigationController_Swift/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				MODULE_NAME = ExampleApp;
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.demo.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "RTRootNavigationController_Swift/RTRootNavigationController_Swift_Example-Bridging-Header.h";
 				SWIFT_SWIFT3_OBJC_INFERENCE = Default;
 				SWIFT_VERSION = 4.0;
 			};
@@ -516,6 +530,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";
@@ -534,6 +549,7 @@
 					"$(inherited)",
 				);
 				INFOPLIST_FILE = Tests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.0;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = "org.cocoapods.$(PRODUCT_NAME:rfc1034identifier)";
 				PRODUCT_NAME = "$(TARGET_NAME)";

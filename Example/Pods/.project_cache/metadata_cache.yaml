@@ -1,0 +1,20 @@
+Pods-RTRootNavigationController_Swift_Example:
+  LABEL: Pods-RTRootNavigationController_Swift_Example
+  PROJECT_PATH: Pods.xcodeproj
+  UUID: CB6B218CDEBF899D17D8C1D74646780E
+Pods-RTRootNavigationController_Swift_Tests:
+  LABEL: Pods-RTRootNavigationController_Swift_Tests
+  PROJECT_PATH: Pods.xcodeproj
+  UUID: 2038104B15FDCB0847DAF4918B678B60
+RTRootNavigationController_Swift:
+  LABEL: RTRootNavigationController_Swift
+  PROJECT_PATH: RTRootNavigationController_Swift.xcodeproj
+  UUID: F9D8740F5E19ED723BDC4241705E94B0
+SwiftFormat:
+  LABEL: SwiftFormat
+  PROJECT_PATH: SwiftFormat.xcodeproj
+  UUID: E5C6CA2540DFB0F3DD06EBFC4933738B
+SwiftLint:
+  LABEL: SwiftLint
+  PROJECT_PATH: SwiftLint.xcodeproj
+  UUID: DF739ADE66FA54F9BBFF97A8CB609E34

@@ -1,10 +1,19 @@
-use_frameworks!
-
-platform :ios, '9.0'
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
+platform :ios, '12.0'
+install! ‘cocoapods’,
+        :disable_input_output_paths => true,
+        :generate_multiple_pod_projects => true,
+        :incremental_installation => true
 
 target 'RTRootNavigationController_Swift_Example' do
+  use_frameworks! :linkage => :static
+  inhibit_all_warnings!
+  use_modular_headers!
+  
   pod 'RTRootNavigationController_Swift', :path => '../'
-
+  pod 'SwiftLint', '0.35.0', :configurations => ['Debug']
+  pod 'SwiftFormat/CLI', '0.49.4', :configurations => ['Debug']
+  
   target 'RTRootNavigationController_Swift_Tests' do
     inherit! :search_paths
 
