@@ -83,7 +83,10 @@ public final class ContainerController: UIViewController {
 
     override public func viewDidLoad() {
         super.viewDidLoad()
+        // fix contentViewController.view.backgroundColor
+        view.backgroundColor = contentViewController.view.backgroundColor ?? .white
         if let containerNavigationController = containerNavigationController {
+            containerNavigationController.view.backgroundColor = view.backgroundColor
             containerNavigationController.view.autoresizingMask = [.flexibleHeight, .flexibleWidth]
             view.addSubview(containerNavigationController.view)
             containerNavigationController.view.frame = view.bounds

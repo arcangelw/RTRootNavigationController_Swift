@@ -66,6 +66,9 @@ open class RootNavigationController: UINavigationController {
     /// 全屏手势代理
     private lazy var fullscreenPopGestureRecognizerDelegate: FullscreenPopGestureRecognizerDelegateCustomizable = FullscreenPopGestureRecognizerDelegate()
 
+    /// 是否设置全屏手势
+    private var hasSetFullscreenPopGestureRecognizer = false
+
     // MARK: - Overrides
 
     /// awakeFromNib
@@ -307,11 +310,21 @@ extension RootNavigationController: UINavigationControllerDelegate {
         }
 
         if controller.rt_disableInteractivePop {
-            fullscreenPopGestureRecognizer.delegate = nil
-            fullscreenPopGestureRecognizer.isEnabled = false
+            if hasSetFullscreenPopGestureRecognizer {
+                fullscreenPopGestureRecognizer.delegate = nil
+                fullscreenPopGestureRecognizer.isEnabled = false
+            } else {
+                interactivePopGestureRecognizer?.delegate = nil
+                interactivePopGestureRecognizer?.isEnabled = false
+            }
         } else {
-            fullscreenPopGestureRecognizer.delegate = fullscreenPopGestureRecognizerDelegate
-            fullscreenPopGestureRecognizer.isEnabled = !isRoot
+            if hasSetFullscreenPopGestureRecognizer {
+                fullscreenPopGestureRecognizer.delegate = fullscreenPopGestureRecognizerDelegate
+                fullscreenPopGestureRecognizer.isEnabled = !isRoot
+            } else {
+                interactivePopGestureRecognizer?.delegate = self
+                interactivePopGestureRecognizer?.isEnabled = !isRoot
+            }
         }
 
         RootNavigationController.attemptRotationToDeviceOrientation()
@@ -353,8 +366,13 @@ extension RootNavigationController: UINavigationControllerDelegate {
     /// navigationController animationControllerFor
     public func navigationController(_ navigationController: UINavigationController, animationControllerFor operation: UINavigationController.Operation, from fromVC: UIViewController, to toVC: UIViewController) -> UIViewControllerAnimatedTransitioning? {
         if case .push = operation {
-            fullscreenPopGestureRecognizer.delegate = nil
-            fullscreenPopGestureRecognizer.isEnabled = false
+            if hasSetFullscreenPopGestureRecognizer {
+                fullscreenPopGestureRecognizer.delegate = nil
+                fullscreenPopGestureRecognizer.isEnabled = false
+            } else {
+                interactivePopGestureRecognizer?.delegate = nil
+                interactivePopGestureRecognizer?.isEnabled = false
+            }
         }
         if let transitioning = rt_delegate?.navigationController?(navigationController, animationControllerFor: operation, from: fromVC, to: toVC) {
             return transitioning
@@ -365,7 +383,7 @@ extension RootNavigationController: UINavigationControllerDelegate {
 
 // MARK: - FullscreenPopGestureRecognizer
 
-extension RootNavigationController {
+extension RootNavigationController: UIGestureRecognizerDelegate {
     /// 设置全屏手势
     private func setUpFullscreenPopGestureRecognizer() {
         guard
@@ -380,13 +398,23 @@ extension RootNavigationController {
         fullscreenPopGestureRecognizer.delegate = fullscreenPopGestureRecognizerDelegate
         fullscreenPopGestureRecognizer.addTarget(target, action: sel)
         gestureView.addGestureRecognizer(fullscreenPopGestureRecognizer)
+        gesture.delegate = nil
         gesture.isEnabled = false
+        hasSetFullscreenPopGestureRecognizer = true
     }
 
     /// 设置自定义代理
     public final func setCustomFullscreenPopGestureRecognizerDelegate(_ delegate: FullscreenPopGestureRecognizerDelegateCustomizable) {
         fullscreenPopGestureRecognizerDelegate = delegate
         setUpFullscreenPopGestureRecognizer()
+    }
+
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldRecognizeSimultaneouslyWith _: UIGestureRecognizer) -> Bool {
+        return gestureRecognizer === interactivePopGestureRecognizer
+    }
+
+    public func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy _: UIGestureRecognizer) -> Bool {
+        return gestureRecognizer === interactivePopGestureRecognizer
     }
 }
 
