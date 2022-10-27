@@ -53,6 +53,11 @@ final class FullscreenPopGestureRecognizerDelegate: NSObject, FullscreenPopGestu
         if translation.x * multiplier <= 0 {
             return false
         }
+        // 滑动返回速度容错
+        let velocity = pan.velocity(in: pan.view)
+        if abs(velocity.x) < abs(velocity.y) {
+            return false
+        }
         return true
     }
 
@@ -113,7 +118,6 @@ final class FullscreenPopGestureRecognizerDelegate: NSObject, FullscreenPopGestu
             return false
         }
     }
-
 //    func gestureRecognizer(_ gestureRecognizer: UIGestureRecognizer, shouldBeRequiredToFailBy _: UIGestureRecognizer) -> Bool {
 //        return gestureRecognizer === fullscreenPopGestureRecognizer
 //    }

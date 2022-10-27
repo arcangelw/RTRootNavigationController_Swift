@@ -20,7 +20,7 @@
 
 import UIKit
 
-// swiftlint:disable line_length identifier_name
+// swiftlint:disable line_length identifier_name weak_delegate file_length
 
 /// 根控制器 RTRootNavigationController
 @objc(RTRootNavigationController)
@@ -160,8 +160,7 @@ open class RootNavigationController: UINavigationController {
         if
             let controllerToPop = super.viewControllers.first(where: {
                 rt_safeUnwrap($0) === viewController
-            })
-        {
+            }) {
             return super.popToViewController(controllerToPop, animated: animated)?.map(rt_safeUnwrap(_:))
         }
         return nil
@@ -222,8 +221,7 @@ open class RootNavigationController: UINavigationController {
         if
             let removeIndex = controllers.firstIndex(where: {
                 rt_safeUnwrap($0) === viewController
-            })
-        {
+            }) {
             controllers.remove(at: removeIndex)
             super.setViewControllers(controllers, animated: animated)
         }
@@ -289,8 +287,10 @@ extension RootNavigationController: UINavigationControllerDelegate {
             let hasSetLeftItem = controller.navigationItem.leftBarButtonItem != nil
             if hasSetLeftItem, !controller.rt_hasSetInteractivePop {
                 controller.rt_disableInteractivePop = true
+                // controller.rt_disableEdgeInteractivePop = true
             } else if !controller.rt_hasSetInteractivePop {
                 controller.rt_disableInteractivePop = false
+                // controller.rt_disableEdgeInteractivePop = false
             }
             installsLeftBarButtonItemIfNeeded(for: controller)
         }
@@ -309,22 +309,27 @@ extension RootNavigationController: UINavigationControllerDelegate {
             _ = controller.view
         }
 
-        if controller.rt_disableInteractivePop {
-            if hasSetFullscreenPopGestureRecognizer {
+        let rt_disableEdgeInteractivePop: Bool
+        if hasSetFullscreenPopGestureRecognizer {
+            if controller.rt_disableInteractivePop {
                 fullscreenPopGestureRecognizer.delegate = nil
                 fullscreenPopGestureRecognizer.isEnabled = false
             } else {
-                interactivePopGestureRecognizer?.delegate = nil
-                interactivePopGestureRecognizer?.isEnabled = false
-            }
-        } else {
-            if hasSetFullscreenPopGestureRecognizer {
                 fullscreenPopGestureRecognizer.delegate = fullscreenPopGestureRecognizerDelegate
                 fullscreenPopGestureRecognizer.isEnabled = !isRoot
-            } else {
-                interactivePopGestureRecognizer?.delegate = self
-                interactivePopGestureRecognizer?.isEnabled = !isRoot
             }
+            rt_disableEdgeInteractivePop = controller.rt_disableEdgeInteractivePop
+        } else {
+            /// 降级处理
+            rt_disableEdgeInteractivePop = controller.rt_disableInteractivePop && controller.rt_disableEdgeInteractivePop
+        }
+        /// 边缘手势处理
+        if rt_disableEdgeInteractivePop {
+            interactivePopGestureRecognizer?.delegate = nil
+            interactivePopGestureRecognizer?.isEnabled = false
+        } else {
+            interactivePopGestureRecognizer?.delegate = self
+            interactivePopGestureRecognizer?.isEnabled = !isRoot
         }
 
         RootNavigationController.attemptRotationToDeviceOrientation()
@@ -369,10 +374,9 @@ extension RootNavigationController: UINavigationControllerDelegate {
             if hasSetFullscreenPopGestureRecognizer {
                 fullscreenPopGestureRecognizer.delegate = nil
                 fullscreenPopGestureRecognizer.isEnabled = false
-            } else {
-                interactivePopGestureRecognizer?.delegate = nil
-                interactivePopGestureRecognizer?.isEnabled = false
             }
+            interactivePopGestureRecognizer?.delegate = nil
+            interactivePopGestureRecognizer?.isEnabled = false
         }
         if let transitioning = rt_delegate?.navigationController?(navigationController, animationControllerFor: operation, from: fromVC, to: toVC) {
             return transitioning
@@ -386,20 +390,21 @@ extension RootNavigationController: UINavigationControllerDelegate {
 extension RootNavigationController: UIGestureRecognizerDelegate {
     /// 设置全屏手势
     private func setUpFullscreenPopGestureRecognizer() {
+        let sel = NSSelectorFromString("handleNavigationTransition:")
         guard
             let gesture = interactivePopGestureRecognizer,
             let gestureView = gesture.view,
             !(gestureView.gestureRecognizers ?? []).contains(fullscreenPopGestureRecognizer),
-            let target = rt_gestureTarget(gesture)
+            let target = rt_gestureTarget(gesture) as? AnyObject,
+            target.responds(to: sel)
         else { return }
         fullscreenPopGestureRecognizerDelegate.navigationController = self
-        let sel = NSSelectorFromString("handleNavigationTransition:")
         fullscreenPopGestureRecognizer.maximumNumberOfTouches = 1
         fullscreenPopGestureRecognizer.delegate = fullscreenPopGestureRecognizerDelegate
         fullscreenPopGestureRecognizer.addTarget(target, action: sel)
         gestureView.addGestureRecognizer(fullscreenPopGestureRecognizer)
-        gesture.delegate = nil
-        gesture.isEnabled = false
+//        gesture.delegate = nil
+//        gesture.isEnabled = false
         hasSetFullscreenPopGestureRecognizer = true
     }
 
@@ -442,4 +447,4 @@ extension RootNavigationController {
     }
 }
 
-// swiftlint:enable line_length identifier_name
+// swiftlint:enable line_length identifier_name weak_delegate file_length

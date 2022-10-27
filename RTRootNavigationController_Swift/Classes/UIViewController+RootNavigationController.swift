@@ -31,7 +31,7 @@ public protocol NavigationItemCustomizable: AnyObject {
 }
 
 extension UIViewController: NavigationItemCustomizable {
-    /// 禁止交互
+    /// 禁止全屏交互
     @IBInspectable
     public var rt_disableInteractivePop: Bool {
         get {
@@ -39,6 +39,19 @@ extension UIViewController: NavigationItemCustomizable {
         }
         set {
             set(associatedValue: newValue, key: "rt_disableInteractivePop", object: self)
+        }
+    }
+
+    /// 禁止边缘交互
+    /// 非手动开启默认true 不参与rt_disableInteractivePop自从处理逻辑
+    /// 当全屏手势添加失败的时候，默认降级为边缘手势
+    @IBInspectable
+    public var rt_disableEdgeInteractivePop: Bool {
+        get {
+            associatedValue(key: "rt_disableEdgeInteractivePop", object: self, initialValue: true)
+        }
+        set {
+            set(associatedValue: newValue, key: "rt_disableEdgeInteractivePop", object: self)
         }
     }
 
@@ -79,8 +92,8 @@ extension UIViewController: NavigationItemCustomizable {
 extension UIViewController {
     /// 是否已经设置disableInteractivePop
     var rt_hasSetInteractivePop: Bool {
-        return true // 默认rt_disableInteractivePop有默认值 false
-        /// return hasAssociatedValue(key: "rt_disableInteractivePop", object: self)
+        /// return true // 项目需求默认rt_disableInteractivePop有默认值 false
+        return hasAssociatedValue(key: "rt_disableInteractivePop", object: self)
     }
 
     /// hook

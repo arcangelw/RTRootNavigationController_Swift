@@ -103,9 +103,9 @@ func set<T: AnyObject>(weakAssociatedValue: T?, key: String, object: Any) {
     set(associatedValue: AssociatedValue(weak: weakAssociatedValue), key: key, object: object)
 }
 
-private extension String {
+extension String {
     /// 获取地址
-    var address: UnsafeRawPointer {
+    fileprivate var address: UnsafeRawPointer {
         return UnsafeRawPointer(bitPattern: abs(hashValue))!
     }
 }

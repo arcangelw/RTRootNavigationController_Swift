@@ -6,8 +6,7 @@
 [![Platform](https://img.shields.io/cocoapods/p/RTRootNavigationController_Swift.svg?style=flat)](https://cocoapods.org/pods/RTRootNavigationController_Swift)
 
 ## Example
-
-To run the example project, clone the repo, and run `pod install` from the Example directory first.
+([RTRootNavigationController](https://github.com/rickytan/RTRootNavigationController)）针对项目需求的Swift版本
 
 ## Requirements
 

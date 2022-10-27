@@ -83,10 +83,13 @@ public final class ContainerNavigationController: UINavigationController {
             let hasSetLeftItem = viewController.navigationItem.leftBarButtonItem != nil
             if isNavigationBarHidden {
                 viewController.rt_disableInteractivePop = true
+                // viewController.rt_disableEdgeInteractivePop = true
             } else if hasSetLeftItem {
                 viewController.rt_disableInteractivePop = true
+                // viewController.rt_disableEdgeInteractivePop = true
             } else {
                 viewController.rt_disableInteractivePop = false
+                // viewController.rt_disableEdgeInteractivePop = false
             }
         }
         if parent is ContainerController, parent?.parent is RootNavigationController {
@@ -194,6 +197,7 @@ public final class ContainerNavigationController: UINavigationController {
         super.setNavigationBarHidden(hidden, animated: animated)
         if visibleViewController?.rt_hasSetInteractivePop == false {
             visibleViewController?.rt_disableInteractivePop = hidden
+            visibleViewController?.rt_disableEdgeInteractivePop = hidden
         }
     }
 

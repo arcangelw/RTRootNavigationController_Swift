@@ -78,12 +78,13 @@ public func rt_updateStatusBarAppearance(_ controller: UIViewController, animate
     guard rt_canSetCustomizableStatusBarAppearance else { return }
     let isHidden = controller.prefersStatusBarHidden
     let animation = animated ? controller.preferredStatusBarUpdateAnimation : .none
+    let rtIgnoring = UIApplication.shared as RTIgnoringMethodDeprecation
     if isHidden {
-        UIApplication.shared.setStatusBarHidden(true, with: animation)
+        rtIgnoring.setStatusBarHidden(true, with: animation)
     } else {
         let style = controller.preferredStatusBarStyle
-        UIApplication.shared.setStatusBarHidden(false, with: animation)
-        UIApplication.shared.setStatusBarStyle(style, animated: animation != .none)
+        rtIgnoring.setStatusBarHidden(false, with: animation)
+        rtIgnoring.setStatusBarStyle(style, animated: animation != .none)
     }
 }
 
@@ -101,6 +102,7 @@ public func rt_updateStatusBarAppearance(_ controller: UIViewController, animate
  }
  return nil;
  */
+
 // 手势
 @inline(__always)
 func rt_gestureTarget(_ gesture: UIGestureRecognizer) -> Any? {
@@ -114,7 +116,7 @@ func rt_gestureTarget(_ gesture: UIGestureRecognizer) -> Any? {
 /// 获取成员变量
 @inline(__always)
 func rt_ivarValue(of object: AnyObject, forKey key: String) -> Any? {
-    let obj = type(of: object)
+    let obj: AnyClass = type(of: object)
     if let ivar = class_getInstanceVariable(obj, key) {
         let value = object_getIvar(object, ivar)
         return value
@@ -125,5 +127,20 @@ func rt_ivarValue(of object: AnyObject, forKey key: String) -> Any? {
     }
     return nil
 }
+
+/// https://nshipster.com/available/
+/// 作弊 忽略告警
+private protocol RTIgnoringMethodDeprecation {
+    func setStatusBarHidden(_ hidden: Bool, with animation: UIStatusBarAnimation)
+    func setStatusBarStyle(_ statusBarStyle: UIStatusBarStyle, animated: Bool)
+}
+
+/// 一个容错兜底措施
+extension RTIgnoringMethodDeprecation {
+    func setStatusBarHidden(_ hidden: Bool, with animation: UIStatusBarAnimation) {}
+    func setStatusBarStyle(_ statusBarStyle: UIStatusBarStyle, animated: Bool) {}
+}
+
+extension UIApplication: RTIgnoringMethodDeprecation {}
 
 // swiftlint:enable line_length identifier_name
